@@ -3,12 +3,94 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutAppFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.AboutAppFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/reza_title"
+        style="@style/MyTextViewBold_14sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_20dp"
+        android:lineSpacingExtra="@dimen/d_5dp"
+        app:layout_constraintEnd_toEndOf="@+id/titleText"
+        app:layout_constraintStart_toStartOf="@+id/titleText"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/by_mohammad_reza"/>
+
+    <TextView
+        android:id="@+id/details_title"
+        style="@style/MyTextViewSemiBold_14sp"
+        android:layout_marginTop="@dimen/d_20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/d_5dp"
+        android:text="@string/application_guide"
+        app:layout_constraintEnd_toEndOf="@+id/titleText"
+        app:layout_constraintStart_toStartOf="@+id/titleText"
+        app:layout_constraintTop_toBottomOf="@+id/reza_title" />
+
+
+    <TextView
+        android:id="@+id/details_text"
+        style="@style/MyTextViewRegular_12sp_lightGray"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/d_5dp"
+        android:layout_marginStart="@dimen/d_20dp"
+        android:layout_marginEnd="@dimen/d_20dp"
+        android:layout_marginTop="@dimen/d_5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_title"
+        android:text="When you open the app, all current month items will show to you, then you can search each movies you want from search bar and return to all items again with clicking on close button that appeared next to the search bar\nEnjoy!" />
+
+
+    <TextView
+        android:id="@+id/information_title"
+        style="@style/MyTextViewSemiBold_14sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/d_5dp"
+        android:layout_marginTop="@dimen/d_20dp"
+        android:text="@string/application_info"
+        app:layout_constraintEnd_toEndOf="@+id/titleText"
+        app:layout_constraintStart_toStartOf="@+id/titleText"
+        app:layout_constraintTop_toBottomOf="@+id/details_text" />
+
+
+    <TextView
+        android:id="@+id/layouts"
+        style="@style/MyTextViewRegular_12sp_lightGray"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_5dp"
+        android:text="@string/app_details"
+        app:layout_constraintEnd_toEndOf="@+id/details_text"
+        app:layout_constraintStart_toStartOf="@+id/details_text"
+        app:layout_constraintTop_toBottomOf="@+id/information_title" />
+
+    <TextView
+        android:id="@+id/titleText"
+        style="@style/MyTextViewMedium_12sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sdk_version"
+        app:layout_constraintEnd_toEndOf="@+id/layouts"
+        app:layout_constraintStart_toStartOf="@+id/layouts"
+        app:layout_constraintTop_toBottomOf="@+id/layouts" />
+
+    <TextView
+        android:id="@+id/subtitleText"
+        style="@style/MyTextViewRegular_12sp_lightGray"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/d_5dp"
+        android:layout_marginTop="@dimen/d_5dp"
+        app:layout_constraintEnd_toEndOf="@+id/titleText"
+        app:layout_constraintStart_toStartOf="@+id/titleText"
+        app:layout_constraintTop_toBottomOf="@+id/titleText"
+        android:text="@string/dependencies_string" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.discovermovie.HomeFragment"
+        android:name="com.example.discovermovie.ui.main.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/aboutAppFragment"
-        android:name="com.example.discovermovie.AboutAppFragment"
+        android:name="com.example.discovermovie.ui.main.AboutAppFragment"
         android:label="fragment_about_app"
         tools:layout="@layout/fragment_about_app" />
 </navigation>

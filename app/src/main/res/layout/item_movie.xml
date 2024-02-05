@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     app:cardCornerRadius="@dimen/d_15dp"
     android:layout_marginBottom="@dimen/d_15dp"
+    app:cardElevation="@dimen/d_1dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -17,6 +18,7 @@
             android:id="@+id/imageView"
             android:layout_width="@dimen/d_90dp"
             android:layout_height="@dimen/d_120dp"
+            android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -29,10 +31,20 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/d_10dp"
             android:layout_marginTop="@dimen/d_10dp"
-            tools:text="The Lord of the rings 2001"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/dateText"
             app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="The Lord of the rings 2001" />
+
+        <TextView
+            android:id="@+id/dateText"
+            style="@style/MyTextViewRegular_12sp_lightGray"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="2001" />
 
         <TextView
             android:id="@+id/subtitleText"

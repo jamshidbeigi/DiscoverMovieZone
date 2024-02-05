@@ -1,4 +1,4 @@
-package com.example.discovermovie.model
+package com.example.discovermovie.data.model
 
 data class QuoteList (
     val count: Int,

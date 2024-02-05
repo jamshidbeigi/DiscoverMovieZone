@@ -2,15 +2,14 @@ import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.discovermovie.MainActivity
+import com.example.discovermovie.ui.main.MainActivity
 import com.example.discovermovie.R
-import com.example.discovermovie.model.MovieModel
+import com.example.discovermovie.data.model.MovieModel
 
 class MovieAdapter(val activity: MainActivity) : PagingDataAdapter<MovieModel, MovieAdapter.MovieViewHolder>(MovieModelDiffCallback()) {
 
@@ -27,12 +26,21 @@ class MovieAdapter(val activity: MainActivity) : PagingDataAdapter<MovieModel, M
 
     class MovieViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        fun bind(movie: MovieModel) {
-            itemView.findViewById<TextView>(R.id.titleText).text = movie.title
+        fun bind(movie: MovieModel?) {
+
+            itemView.setOnClickListener{}
+
+            itemView.findViewById<TextView>(R.id.titleText).text = movie!!.title
             itemView.findViewById<TextView>(R.id.subtitleText).text = movie.overview
             Glide.with(itemView)
-                .load("https://api.themoviedb.org"+movie.poster_path)
+                .load("https://image.tmdb.org/t/p/w500${movie.poster_path}")
                 .into(itemView.findViewById(R.id.imageView))
+
+            if(movie.release_date.length>=5) {
+                val onlyDate = movie.release_date.substring(0, 4)
+                itemView.findViewById<TextView>(R.id.dateText).text = onlyDate
+            }
+
         }
     }
 

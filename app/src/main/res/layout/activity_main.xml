@@ -89,7 +89,7 @@
             app:itemActiveIndicatorStyle="@null"
             app:itemIconSize="24dp"
             app:itemIconTint="@color/bottom_nav_color_selector_1"
-            app:itemRippleColor="@color/transparent"
+            app:itemRippleColor="@null"
             app:labelVisibilityMode="unlabeled"
             app:layout_constraintBottom_toBottomOf="parent"
             app:menu="@menu/bottom_nav_main" />

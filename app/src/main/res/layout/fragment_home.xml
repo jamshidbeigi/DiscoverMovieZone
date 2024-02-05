@@ -5,32 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="@color/bg_gray"
-    tools:context=".HomeFragment">
+    tools:context=".ui.main.HomeFragment">
 
     <EditText
-        android:id="@+id/et"
+        android:id="@+id/search_edit_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_20dp"
+        android:layout_marginTop="@dimen/d_20dp"
         android:background="@drawable/all_rounded_15dp"
         android:fontFamily="@font/poppins_regular"
-        android:gravity="center"
-        android:layout_marginStart="@dimen/d_20dp"
+        android:gravity="start|center_vertical"
+        android:inputType="text"
         android:layout_marginEnd="@dimen/d_20dp"
         android:paddingStart="15dp"
-        android:layout_marginTop="@dimen/d_20dp"
         android:paddingTop="12dp"
-        android:paddingEnd="15dp"
-        android:drawablePadding="@dimen/d_10dp"
+        android:paddingEnd="65dp"
         android:paddingBottom="12dp"
-        android:drawableEnd="@drawable/ic_search"
         android:singleLine="true"
         android:text=""
         android:textColor="@color/dark_gray"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/close_btn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:inputType="text"
         tools:ignore="Autofill,LabelFor" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -40,11 +38,60 @@
         android:paddingStart="@dimen/d_20dp"
         android:paddingTop="@dimen/d_20dp"
         android:paddingEnd="@dimen/d_20dp"
+        android:paddingBottom="@dimen/d_15dp"
+        android:layout_marginTop="@dimen/d_15dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et"
+        app:layout_constraintTop_toBottomOf="@+id/search_edit_text"
         tools:itemCount="10"
         tools:listitem="@layout/item_movie" />
 
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_movies"
+        android:layout_marginBottom="@dimen/d_100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/movie_recyclerview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@+id/movie_recyclerview" />
+
+    <ImageView
+        android:id="@+id/search_Image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search"
+        android:padding="@dimen/d_10dp"
+        android:layout_marginEnd="@dimen/d_10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/search_edit_text"
+        app:layout_constraintEnd_toEndOf="@+id/search_edit_text"
+        app:layout_constraintTop_toTopOf="@+id/search_edit_text" />
+
+    <ImageView
+        android:id="@+id/close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginEnd="@dimen/d_20dp"
+        android:src="@drawable/close_square_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/search_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/search_edit_text" />
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/d_4dp"
+        android:layout_marginBottom="@dimen/d_4dp"
+        android:background="@color/bg_gray"
+        android:layout_marginEnd="@dimen/d_8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/search_edit_text"
+        app:layout_constraintEnd_toStartOf="@+id/search_Image_btn"
+        app:layout_constraintTop_toTopOf="@+id/search_edit_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
