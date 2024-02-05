@@ -7,4 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="nav_item_gray">#B9B9B9</color>
+    <color name="new_cyan">#22D8B5</color>
+    <color name="dark_gray">#19191A</color>
+    <color name="click_gray">#DFDFDF</color>
+    <color name="light_gray">#707070</color>
+    <color name="bg_gray">#F8F8F8</color>
+    <color name="transparent">#00000000</color>
+    <color name="unselected_line_gray">#DBDDDF</color>
+    <color name="line_gray">#F2F2F3</color>
+
 </resources>

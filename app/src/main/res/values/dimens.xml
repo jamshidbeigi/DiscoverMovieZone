@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <dimen name="dots_height">@dimen/d_30dp</dimen>
+        <dimen name="dots_margin_bottom">@dimen/d_20dp</dimen>
+        <dimen name="img_width_height">@dimen/d_200dp</dimen>
+        <dimen name="slide_title">@dimen/d_30dp</dimen>
+        <dimen name="slide_desc">16dp</dimen>
+        <dimen name="desc_padding">@dimen/d_40dp</dimen>
+        <dimen name="fab_margin">16dp</dimen>
+        <dimen name="d_0dp">0dp</dimen>
+        <dimen name="d_0_2dp">0.2dp</dimen>
+        <dimen name="d_0_5dp">0.5dp</dimen>
+        <dimen name="d_1dp">1dp</dimen>
+        <dimen name="d_1_5dp">1.5dp</dimen>
+        <dimen name="d_2dp">2dp</dimen>
+        <dimen name="d_3dp">3dp</dimen>
+        <dimen name="d_4dp">4dp</dimen>
+        <dimen name="d_5dp">5dp</dimen>
+        <dimen name="d_8dp">8dp</dimen>
+        <dimen name="d_10dp">10dp</dimen>
+        <dimen name="d_15dp">15dp</dimen>
+        <dimen name="d_16dp">16dp</dimen>
+        <dimen name="d_18dp">18dp</dimen>
+        <dimen name="d_20dp">20dp</dimen>
+        <dimen name="d_22dp">22dp</dimen>
+        <dimen name="d_24dp">24dp</dimen>
+        <dimen name="d_25dp">25dp</dimen>
+        <dimen name="d_30dp">30dp</dimen>
+        <dimen name="d_32dp">32dp</dimen>
+        <dimen name="d_35dp">35dp</dimen>
+        <dimen name="d_40dp">40dp</dimen>
+        <dimen name="d_45dp">45dp</dimen>
+        <dimen name="d_48dp">48dp</dimen>
+        <dimen name="d_50dp">50dp</dimen>
+        <dimen name="d_55dp">55dp</dimen>
+        <dimen name="d_60dp">60dp</dimen>
+        <dimen name="d_64dp">64dp</dimen>
+        <dimen name="d_65dp">65dp</dimen>
+        <dimen name="d_70dp">70dp</dimen>
+        <dimen name="d_80dp">80dp</dimen>
+        <dimen name="d_85dp">85dp</dimen>
+        <dimen name="d_90dp">90dp</dimen>
+        <dimen name="d_95dp">95dp</dimen>
+        <dimen name="d_100dp">100dp</dimen>
+        <dimen name="d_120dp">120dp</dimen>
+        <dimen name="d_128dp">128dp</dimen>
+        <dimen name="d_150dp">150dp</dimen>
+        <dimen name="d_170dp">170dp</dimen>
+        <dimen name="d_180dp">180dp</dimen>
+        <dimen name="d_200dp">200dp</dimen>
+        <dimen name="d_250dp">250dp</dimen>
+        <dimen name="d_256dp">256dp</dimen>
+        <dimen name="d_270dp">270dp</dimen>
+        <dimen name="d_300dp">300dp</dimen>
+        <dimen name="d_315dp">315dp</dimen>
+        <dimen name="d_335dp">335dp</dimen>
+        <dimen name="d_350dp">350dp</dimen>
+        <dimen name="d_400dp">400dp</dimen>
+        <dimen name="d_512dp">512dp</dimen>
+        <dimen name="d_1000dp">1000dp</dimen>
+        <dimen name="d_n_30dp">-30dp</dimen>
+        <dimen name="d_n_50dp">-50dp</dimen>
+        <dimen name="d_0sp">0sp</dimen>
+        <dimen name="d_5sp">5sp</dimen>
+        <dimen name="d_10sp">10sp</dimen>
+        <dimen name="d_11sp">11sp</dimen>
+        <dimen name="d_12sp">12sp</dimen>
+        <dimen name="d_13sp">13sp</dimen>
+        <dimen name="d_14sp">14sp</dimen>
+        <dimen name="d_15sp">15sp</dimen>
+        <dimen name="d_16sp">16sp</dimen>
+        <dimen name="d_18sp">18sp</dimen>
+        <dimen name="d_20sp">20sp</dimen>
+        <dimen name="d_22sp">22sp</dimen>
+        <dimen name="d_24sp">24sp</dimen>
+        <dimen name="d_25sp">25sp</dimen>
+        <dimen name="d_30sp">30sp</dimen>
+        <dimen name="d_35sp">35sp</dimen>
+        <dimen name="d_40sp">40sp</dimen>
+        <dimen name="d_45sp">45sp</dimen>
+        <dimen name="d_60sp">60sp</dimen>
+        <dimen name="s_title_txt">@dimen/d_13sp</dimen>
+        <dimen name="activity_horizontal_margin">16dp</dimen>
+        <dimen name="activity_vertical_margin">16dp</dimen>
+        <dimen name="local_preview_margin_top">28dp</dimen>
+        <dimen name="local_preview_margin_right">24dp</dimen>
+
+        <!-- buttons -->
+        <dimen name="call_button_size">60dp</dimen>
+        <dimen name="other_button_size">54dp</dimen>
+
+        <dimen name="local_preview_width">150dp</dimen>
+        <dimen name="local_preview_height">200dp</dimen>
+        <dimen name="local_back_icon_size">50dp</dimen>
+        <dimen name="remote_back_icon_size">100dp</dimen>
+        <dimen name="remote_back_icon_margin_bottom">90dp</dimen>
+
+        <!-- buttons -->
+        <dimen name="control_bottom_margin">24dp</dimen>
+        <dimen name="control_bottom_horizontal_margin">30dp</dimen>
+
+
+        <dimen name="standard_55">55dp</dimen>
+        <dimen name="standard_105">105dp</dimen>
+        <dimen name="standard_155">155dp</dimen>
+    </resources>

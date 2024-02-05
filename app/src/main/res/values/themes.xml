@@ -1,5 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.DiscoverMovie" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.DiscoverMovie" parent="Theme.MaterialComponents.Light.NoActionBar" />
+
+
+    <style name="MyTextViewMedium_14sp" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/d_14sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="MyTextViewMedium_13sp" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/d_13sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="MyTextViewMedium_12sp" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/d_12sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="MyTextViewRegular_12sp" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/line_gray</item>
+        <item name="android:textSize">@dimen/d_12sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="MyTextViewRegular_12sp_lightGray" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/light_gray</item>
+        <item name="android:textSize">@dimen/d_12sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="MyTextViewBold_14sp" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/d_14sp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="MyTextViewSemiBold_14sp" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/d_14sp</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+    </style>
 </resources>
