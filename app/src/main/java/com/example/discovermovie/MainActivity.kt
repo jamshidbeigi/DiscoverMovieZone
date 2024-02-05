@@ -1,46 +1,69 @@
 package com.example.discovermovie
 
+import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.discovermovie.ui.theme.DiscoverMovieTheme
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.databinding.DataBindingUtil
+import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.NavigationUI
+import com.example.discovermovie.databinding.ActivityMainBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
-class MainActivity : ComponentActivity() {
+
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var navController: NavController
+
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            DiscoverMovieTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
+
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.navigation_fragment_container) as NavHostFragment
+        navController = navHostFragment.navController
+
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation_view)
+
+
+
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+
+            when (destination.id) {
+                R.id.homeFragment -> {
+                    binding.topTitle.text = "Discover Movies"
+                }
+
+                R.id.aboutAppFragment -> {
+                    binding.topTitle.text = "About App"
                 }
             }
         }
-    }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    DiscoverMovieTheme {
-        Greeting("Android")
+        NavigationUI.setupWithNavController(bottomNavigationView, navController)
+
+
+//        val quotesApi = RetrofitHelper.getInstance().create(MyApi::class.java)
+//        // launching a new coroutine
+//        GlobalScope.launch {
+//            val result = quotesApi.getQuotes()
+//            if (result != null)
+//            // Checking the results
+//                Log.d("ayush: ", result.body().toString())
+//        }
+
     }
-}
+
+
+    }
+
