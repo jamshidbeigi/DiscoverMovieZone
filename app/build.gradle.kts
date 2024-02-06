@@ -75,25 +75,28 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    // retrofit dependencies REST API
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
     val nav_version = "2.7.6"
 
+    // navigation component dependencies
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
 
-
+    // jetpack paging dependencies
+    implementation("androidx.paging:paging-runtime-ktx:3.2.1")
     implementation("androidx.paging:paging-runtime-ktx:3.2.1")
 
-    implementation("androidx.paging:paging-runtime-ktx:3.2.1")
+    // view model dependencies
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+
+    // glide dependencies for show images
     implementation("com.github.bumptech.glide:glide:4.13.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.13.0")
-
-//optional to handle Serializable
-
 
 
 }

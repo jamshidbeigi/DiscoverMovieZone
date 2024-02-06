@@ -31,7 +31,6 @@ class MainActivity : AppCompatActivity() {
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation_view)
 
 
-
         navController.addOnDestinationChangedListener { _, destination, _ ->
 
             when (destination.id) {
@@ -45,19 +44,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
         NavigationUI.setupWithNavController(bottomNavigationView, navController)
-
-
-//        val quotesApi = RetrofitHelper.getInstance().create(MyApi::class.java)
-//        // launching a new coroutine
-//        GlobalScope.launch {
-//            val result = quotesApi.getQuotes()
-//            if (result != null)
-//            // Checking the results
-//                Log.d("ayush: ", result.body().toString())
-//        }
-
     }
 
 

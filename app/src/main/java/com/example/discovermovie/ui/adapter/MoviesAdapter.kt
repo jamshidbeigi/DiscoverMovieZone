@@ -11,7 +11,7 @@ import com.example.discovermovie.ui.main.MainActivity
 import com.example.discovermovie.R
 import com.example.discovermovie.data.model.MovieModel
 
-class MovieAdapter(val activity: MainActivity) : PagingDataAdapter<MovieModel, MovieAdapter.MovieViewHolder>(MovieModelDiffCallback()) {
+class MovieAdapter() : PagingDataAdapter<MovieModel, MovieAdapter.MovieViewHolder>(MovieModelDiffCallback()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MovieViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_movie, parent, false)

@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-        <dimen name="dots_height">@dimen/d_30dp</dimen>
-        <dimen name="dots_margin_bottom">@dimen/d_20dp</dimen>
-        <dimen name="img_width_height">@dimen/d_200dp</dimen>
-        <dimen name="slide_title">@dimen/d_30dp</dimen>
-        <dimen name="slide_desc">16dp</dimen>
-        <dimen name="desc_padding">@dimen/d_40dp</dimen>
-        <dimen name="fab_margin">16dp</dimen>
         <dimen name="d_0dp">0dp</dimen>
         <dimen name="d_0_2dp">0.2dp</dimen>
         <dimen name="d_0_5dp">0.5dp</dimen>
@@ -80,28 +73,4 @@
         <dimen name="d_40sp">40sp</dimen>
         <dimen name="d_45sp">45sp</dimen>
         <dimen name="d_60sp">60sp</dimen>
-        <dimen name="s_title_txt">@dimen/d_13sp</dimen>
-        <dimen name="activity_horizontal_margin">16dp</dimen>
-        <dimen name="activity_vertical_margin">16dp</dimen>
-        <dimen name="local_preview_margin_top">28dp</dimen>
-        <dimen name="local_preview_margin_right">24dp</dimen>
-
-        <!-- buttons -->
-        <dimen name="call_button_size">60dp</dimen>
-        <dimen name="other_button_size">54dp</dimen>
-
-        <dimen name="local_preview_width">150dp</dimen>
-        <dimen name="local_preview_height">200dp</dimen>
-        <dimen name="local_back_icon_size">50dp</dimen>
-        <dimen name="remote_back_icon_size">100dp</dimen>
-        <dimen name="remote_back_icon_margin_bottom">90dp</dimen>
-
-        <!-- buttons -->
-        <dimen name="control_bottom_margin">24dp</dimen>
-        <dimen name="control_bottom_horizontal_margin">30dp</dimen>
-
-
-        <dimen name="standard_55">55dp</dimen>
-        <dimen name="standard_105">105dp</dimen>
-        <dimen name="standard_155">155dp</dimen>
     </resources>

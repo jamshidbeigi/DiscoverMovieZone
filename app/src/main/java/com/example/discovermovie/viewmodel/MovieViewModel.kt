@@ -11,5 +11,7 @@ import com.example.discovermovie.data.model.MovieModel
 
 class MovieViewModel(private val movieRepository: MovieRepository) : ViewModel() {
 
+    // show all movies view model
+
     val movies: LiveData<PagingData<MovieModel>> = movieRepository.getPopularMovies().asLiveData().cachedIn(viewModelScope)
 }

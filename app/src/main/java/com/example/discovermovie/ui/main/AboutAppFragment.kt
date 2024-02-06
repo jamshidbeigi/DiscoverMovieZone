@@ -12,11 +12,6 @@ class AboutAppFragment : Fragment() {
 
     private lateinit var binding: FragmentAboutAppBinding
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -24,12 +19,6 @@ class AboutAppFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentAboutAppBinding.inflate(inflater, container, false)
         return binding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-
     }
 
 }

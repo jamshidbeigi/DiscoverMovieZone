@@ -9,7 +9,9 @@ import androidx.paging.cachedIn
 import com.example.discovermovie.data.paging.SearchMovieRepository
 import com.example.discovermovie.data.model.MovieModel
 
-class SearchMovieViewModel(private var searchMovieRepository: SearchMovieRepository, private var title: String?) : ViewModel() {
+class SearchMovieViewModel(private var searchMovieRepository: SearchMovieRepository) : ViewModel() {
+
+    // show specific movies with specific title view model
 
     var movies: LiveData<PagingData<MovieModel>> = searchMovieRepository.getPopularMoviesByTitle(null).asLiveData().cachedIn(viewModelScope)
 

@@ -1,5 +1,5 @@
-# DiscoverMovie
-Hey there o/!
+# DiscoverMovie Application
+Hey there !
 # We just wanted to let you know that we care a great deal about
 # making our git history clean, maintainable and easy to access for
 # all our contributors.
@@ -17,16 +17,14 @@ Hey there o/!
 
 # Can be upgrade with:
 
-
 *  Robolectric
 *  Coroutines
 *  Room
 *  Compose UI
-*  Koin(Dependency Injection)
+*  Koin (Dependency Injection)
 *  Timber
 *  Mockito
 *  Espresso
-
 
 ## Requirements
 
@@ -37,7 +35,8 @@ Hey there o/!
 
 ## Architecture
 
-*  MVVM Architecture and active view model
+*  MVVM Architecture with active view model by using clean architecture and SOLID principles,
+* the performance of doing tasks of sprints can be improve by using CI/CD and Agile methodologies
 
 ## Data
 

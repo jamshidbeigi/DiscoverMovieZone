@@ -6,6 +6,8 @@ import com.example.discovermovie.data.network.MovieApi
 
 class SearchMovieRepository(private val movieApi: MovieApi, private val startDate:String, private val endDate:String) {
 
+    // show specific movies with specific title repository
+
     fun getPopularMoviesByTitle(title: String?) = Pager(
         config = PagingConfig(pageSize = 20, enablePlaceholders = false),
         pagingSourceFactory = { SearchMoviePagingSource(movieApi, title,startDate,endDate) }

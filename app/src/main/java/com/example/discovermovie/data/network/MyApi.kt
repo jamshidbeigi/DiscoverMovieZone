@@ -1,8 +1,6 @@
 package com.example.discovermovie.data.network
 
 import com.example.discovermovie.data.model.MoviesResponse
-import com.example.discovermovie.data.model.QuoteList
-import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Header
 import retrofit2.http.Query
@@ -25,6 +23,5 @@ interface MovieApi {
         @Query("primary_release_date.gte") startDate:String,
         @Query("primary_release_date.lte") endDate: String?
     ): MoviesResponse
-
 
 }

@@ -44,7 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/details_title"
-        android:text="When you open the app, all current month items will show to you, then you can search each movies you want from search bar and return to all items again with clicking on close button that appeared next to the search bar\nEnjoy!" />
+        android:text="@string/app_guide" />
 
 
     <TextView

@@ -13,4 +13,5 @@
     <string name="application_guide">Application guide</string>
     <string name="application_info">Application Info</string>
     <string name="by_mohammad_reza">By M.Reza Jamshidbeigi...</string>
+    <string name="app_guide">When you open the app, all current month items will show to you, then you can search each movies you want from search bar and return to all items again with clicking on close button that appeared next to the search bar\nEnjoy!</string>
 </resources>

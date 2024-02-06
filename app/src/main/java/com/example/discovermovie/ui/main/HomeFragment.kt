@@ -44,7 +44,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        movieAdapter = MovieAdapter(requireActivity() as MainActivity)
+        movieAdapter = MovieAdapter()
 
         initialize()
 
@@ -118,9 +118,7 @@ class HomeFragment : Fragment() {
             object : ViewModelProvider.Factory {
                 override fun <T : ViewModel> create(modelClass: Class<T>): T {
                     return SearchMovieViewModel(
-                        SearchMovieRepository(MovieApiFactory.create(), START_DATE, END_DATE),
-                        null
-                    ) as T
+                        SearchMovieRepository(MovieApiFactory.create(), START_DATE, END_DATE)) as T
                 }
             }
         )[SearchMovieViewModel::class.java]
